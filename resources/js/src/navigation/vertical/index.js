@@ -8,5 +8,5 @@ import mathMenu from './math-menu'
 
 // Array of sections
 // export default [...mathMenu]
-export default [...mathMenu,...uiElements, ...formsAndTables,...appAndPages]
-// export default [...dashboard, ...appAndPages, ...uiElements, ...formsAndTables, ...chartsAndMaps, ...others]
+export default [...dashboard,...mathMenu]
+// export default [, ...appAndPages, ...uiElements, ...formsAndTables, ...chartsAndMaps, ...others]

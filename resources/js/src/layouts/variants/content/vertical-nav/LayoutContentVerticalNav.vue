@@ -3,7 +3,7 @@
     <slot></slot>
 
     <!-- Slot: Navbar -->
-    <template #navbar="{ isVerticalNavMenuActive, toggleVerticalNavMenuActive }">
+    <template #navbar="{ toggleVerticalNavMenuActive }">
       <div
         class="navbar-content-container"
         :class="{'expanded-search': shallShowFullSearch}"
@@ -17,18 +17,18 @@
           >
             {{ icons.mdiMenu }}
           </v-icon>
-          <app-bar-search
+          <!-- <app-bar-search
             :shall-show-full-search.sync="shallShowFullSearch"
             :data="appBarSearchData"
             :filter="searchFilterFunc"
             :search-query.sync="appBarSearchQuery"
             @update:shallShowFullSearch="handleShallShowFullSearchUpdate(isVerticalNavMenuActive, toggleVerticalNavMenuActive)"
-          ></app-bar-search>
+          ></app-bar-search> -->
         </div>
 
         <!-- Right Content: I18n, Light/Dark, Notification & User Dropdown -->
         <div class="d-flex align-center right-row">
-          <app-bar-i18n></app-bar-i18n>
+          <!-- <app-bar-i18n></app-bar-i18n> -->
           <app-bar-theme-switcher class="mx-4"></app-bar-theme-switcher>
           <app-bar-notification></app-bar-notification>
           <app-bar-user-menu></app-bar-user-menu>
@@ -43,7 +43,7 @@
           href="https://themeselection.com"
           class="text-decoration-none"
         >ThemeSelection</a><span class="d-none d-md-inline">, All rights Reserved</span></span>
-        <div class="align-center d-none d-md-flex">
+        <!-- <div class="align-center d-none d-md-flex">
           <span>Hand-crafted &amp; Made with</span>
           <v-icon
             color="error"
@@ -51,13 +51,13 @@
           >
             {{ icons.mdiHeartOutline }}
           </v-icon>
-        </div>
+        </div> -->
       </div>
     </template>
 
-    <template #v-app-content>
+    <!-- <template #v-app-content>
       <app-customizer class="d-none d-md-block"></app-customizer>
-    </template>
+    </template> -->
   </layout-content-vertical-nav>
 </template>
 
