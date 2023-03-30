@@ -2,7 +2,6 @@
   <div id="user-view">
     <v-row>
       <v-col cols="12" md="5" lg="4">
-        asdadsadssd
         <user-bio-panel
           :user-data="userData"
           :is-plan-upgrade-dialog-visible.sync="isPlanUpgradeDialogVisible"

@@ -1,9 +1,10 @@
 <template>
   <div class="user-tab-overview">
+
     <!-- user project list -->
     <v-card class="mb-7">
       <v-card-title> 
-        수업 리스트 
+        수업 리스트
         <v-spacer></v-spacer>
         <v-btn color="primary" class="me-3" @click = "isCourseAddDialogVisible = !isCourseAddDialogVisible">
           <v-icon size="18" class="me-1">

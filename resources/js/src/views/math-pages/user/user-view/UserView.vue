@@ -67,7 +67,7 @@
                   :is-plan-upgrade-dialog-visible.sync="isPlanUpgradeDialogVisible"
                 ></user-bio-panel>
               </v-col>
-
+              
               <v-col cols="12" md="7" lg="8">
                 <v-tabs v-model="userTab" show-arrows class="user-tabs">
                   <v-tab v-for="tab in tabs" :key="tab.icon">
@@ -258,11 +258,11 @@ export default {
     ]
 
     const tabs = [
-      { icon: mdiAccountOutline, title: '요약' },
-      { icon: mdiBellOutline, title: '상담노트' },
-      // { icon: mdiBookmarkOutline, title: '결제&연장' },
-      { icon: mdiLockOutline, title: '비밀번호 변경' },
-      // { icon: mdiBellOutline, title: '알람설정' },
+      { icon: mdiAccountOutline, title: '수업 리스트' }, // Class List
+      { icon: mdiBellOutline, title: '이력 현황' },  // History Status
+      { icon: mdiBookmarkOutline, title: '노트' },  // Note
+      { icon: mdiLockOutline, title: '비밀번호 변경' },  // Change Passwrod
+      { icon: mdiBellOutline, title: '지불' }, // Payment
       // { icon: mdiLinkVariant, title: '연동' },
     ]
 
